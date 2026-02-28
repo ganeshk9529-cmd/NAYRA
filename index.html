@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAYRA | Intelligent AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background: radial-gradient(circle at 30% 30%, #1a1f3c, #0a0d1a 60%);
+color:white;
+overflow-x:hidden;
+}
+
+/* Floating Glow Orbs */
+.orb{
+position:absolute;
+border-radius:50%;
+filter:blur(80px);
+opacity:0.6;
+animation:float 10s infinite ease-in-out alternate;
+}
+
+.orb1{
+width:300px;
+height:300px;
+background:#5b21b6;
+top:10%;
+left:10%;
+}
+
+.orb2{
+width:250px;
+height:250px;
+background:#2563eb;
+bottom:10%;
+right:10%;
+animation-delay:2s;
+}
+
+@keyframes float{
+from{transform:translateY(-30px) rotate(0deg);}
+to{transform:translateY(30px) rotate(20deg);}
+}
+
+/* Hero Section */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+z-index:2;
+animation:fadeIn 1.5s ease;
+}
+
+h1{
+font-size:60px;
+letter-spacing:3px;
+background:linear-gradient(90deg,#7c3aed,#2563eb);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+margin-top:20px;
+font-size:20px;
+color:#cbd5e1;
+max-width:600px;
+}
+
+.btn{
+margin-top:35px;
+padding:14px 30px;
+border-radius:40px;
+background:linear-gradient(90deg,#7c3aed,#2563eb);
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.btn:hover{
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+/* Glass Section */
+.section{
+padding:100px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.glass{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:20px;
+padding:60px;
+max-width:800px;
+text-align:center;
+box-shadow:0 20px 60px rgba(0,0,0,0.5);
+transform:perspective(1000px) rotateX(5deg);
+transition:0.5s;
+}
+
+.glass:hover{
+transform:perspective(1000px) rotateX(0deg) scale(1.02);
+}
+
+.section h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.section p{
+color:#cbd5e1;
+font-size:18px;
+line-height:1.6;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#64748b;
+font-size:14px;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+</style>
+</head>
+<body>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<section class="hero">
+<h1>NAYRA</h1>
+<p>The Next Generation Intelligent AI Assistant built for thinkers, traders and decision makers.</p>
+<a href="#" class="btn">Coming Soon</a>
+</section>
+
+<section class="section">
+<div class="glass">
+<h2>Why NAYRA?</h2>
+<p>
+No lag. No weak voice detection. No unnecessary upselling.  
+Engineered for precision, speed and real intelligence.  
+Built to think with you, not just respond.
+</p>
+</div>
+</section>
+
+<section class="section">
+<div class="glass">
+<h2>Designed for High Performers</h2>
+<p>
+Entrepreneurs. Traders. Creators.  
+NAYRA adapts, learns and supports powerful decision making in real time.
+</p>
+</div>
+</section>
+
+<footer>
+© 2026 NAYRA AI. All rights reserved.
+</footer>
+
+</body>
+  </html>
